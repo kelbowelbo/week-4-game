@@ -1,0 +1,189 @@
+body {
+    background-image: url("https://images.designtrends.com/wp-content/uploads/2016/02/23055821/Diamond-Background-Image.jpg");
+}
+
+.box-1 {
+	/*height: 300px
+	width: 200px;*/
+	background-color: white;
+	font-size: 15px;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	color: black;
+	text-shadow: 5px 3px silver;
+	/*font-family: arial, sans-serif, ;*/
+	font-style: italic;
+	font-size: 100px;
+	font-weight: bold;	
+}
+
+.box-2 {
+	height: 100px;
+	width: 300px;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	background-color: black;
+}
+
+.targetScoreBox {
+	height: 75px;
+	width: 100px;
+	background-color: pink;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.images {
+	height: 100px;
+	width: 100px;
+	background-color: white;
+}
+
+.goldminer {
+	height: 100px;
+	width: 100px;
+}
+
+.wins-losses {
+	height: 90px;
+	width: 500px;
+	background-color: yellow;
+	font-size: 30px;
+}
+
+.totScoreTitle {
+	width: 200px;
+	background-color: lavender;
+	font-size: 20px;
+}
+
+.guessesBox {
+	height: 125px;
+	width: 500px;
+	background-color: lavender;
+	font-size: 30px;
+}
+/*.box {
+	background: ;
+	height: 80px;
+	position:;
+	width:;
+}
+
+.box-1 {
+	background:;
+	height:;
+	width:;
+	top: ;
+	left:;
+	right:;
+	bottom:;
+
+}
+
+.box-2 {
+	background:;
+	height:;
+	width:;
+	top: ;
+	left:;
+	right:;
+	bottom:;
+
+}
+.box-3 {
+	background:;
+	height:;
+	width:;
+	top: ;
+	left:;
+	right:;
+	bottom:;
+
+}
+.box-4 {
+	background:;
+	height:;
+	width:;
+	top: ;
+	left:;
+	right:;
+	bottom:;
+
+}
+.box-5 {
+	background:;
+	height:;
+	width:;
+	top: ;
+	left:;
+	right:;
+	bottom:;
+
+}
+v.box-6 {
+	background:;
+	height:;
+	width:;
+	top: ;
+	left:;
+	right:;
+	bottom:;
+
+}
+.box-7 {
+	background:;
+	height:;
+	width:;
+	top: ;
+	left:;
+	right:;
+	bottom:;
+
+}
+.box-8 {
+	background:;
+	height:;
+	width:;
+	top: ;
+	left:;
+	right:;
+	bottom:;
+
+}
+.box-9 {
+	background:;
+	height:;
+	width:;
+	top: ;
+	left:;
+	right:;
+	bottom:;
+
+}
+.box-10 {
+	background:;
+	height:;
+	width:;
+	top: ;
+	left:;
+	right:;
+	bottom:;
+
+}
+.box-11 {
+	background:;
+	height:;
+	width:;
+	top: ;
+	left:;
+	right:;
+	bottom:;
+
+}
+*/
