@@ -48,11 +48,16 @@ function onButtonClick(buttonNumbers) {
         wins++;
         message = "You win!";
         $(".goldminer").show();
+        // this is where the code goes for the "whoooo hooo!"
         resetGame();
     } else if (totScore > targetScore) {
         losses++;
         message = "You lost!";
+        // this is where the code gor for the "GO ON, GIT!"
         resetGame(); 
+    } else {
+        message = "";
+        $(".goldminer").hide();
     }
 
     updateHTMLDisplay();
@@ -77,7 +82,7 @@ $("#greenCrystal").click(function() {
 
 
 $(document).ready(function() {
-
+    playBackground();
     resetGame();
     updateHTMLDisplay();
     alert("Let's Play the Crystal Game");
@@ -85,5 +90,20 @@ $(document).ready(function() {
 });
 
 
+function playBackground() {
+    var x=document.getElementById("backgroundmusic");
+    x.play();
+    
+}
 
+// this is the code for playing the goldminer's comments: create HTML for refer to winminer, loseminer
+// function winMiner() {
+//     var x=document.getElementById("winminer");
+//     x.play();
+// }
+
+// function loseMiner() {
+//     var x=document.getElementById("loseminer");
+//     x.play();
+// }
 
