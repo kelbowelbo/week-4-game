@@ -28,7 +28,7 @@ function resetGame() {
     blueCrystal = getRandomInt(1, 12);
     greenCrystal = getRandomInt(1, 12);
     totScore=0;
-    console.log(pinkCrystal, blueCrystal, greenCrystal, purpleCrystal); 
+    // console.log(pinkCrystal, blueCrystal, greenCrystal, purpleCrystal); 
 
 }
 
@@ -42,7 +42,6 @@ function updateHTMLDisplay() {
 }
 
 function onButtonClick(buttonNumbers) {
-    console.log("A button was clicked " + buttonNumbers);
     totScore += buttonNumbers;
 
     if (totScore === targetScore) {
@@ -61,29 +60,24 @@ function onButtonClick(buttonNumbers) {
 }
 
 $("#pinkCrystal").click(function() {
-    console.log("pinkButtonclicked");
     onButtonClick(pinkCrystal);
 });
 
 $("#purpleCrystal").click(function() {
-    console.log("purpleButtonclicked");
     onButtonClick(purpleCrystal);
 });
 
 $("#blueCrystal").click(function() {
-    console.log("blueButtonclicked");
     onButtonClick(blueCrystal);
 });
 
 $("#greenCrystal").click(function() {
-    console.log("greenButtonclicked");
     onButtonClick(greenCrystal);
 });
 
 
 $(document).ready(function() {
 
-    console.log("I'm Ready!");
     resetGame();
     updateHTMLDisplay();
     alert("Let's Play the Crystal Game");
