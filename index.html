@@ -12,41 +12,52 @@
  	<h1><strong>Thars Crystals Up In Them Thar Hills!</strong></h1>
 
  		
- 	<div class="box-1">
-		<p>You will be given a random number at the start of the game.  There are four crystals below.</p>
-		<p>By clicking on a crystal, you will add a specific amount of points to your total score.</p>
-		<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-		<p>The value of each crystal is hidden from you until you click on it.</p>
-		<p>Each time when the game starts, the game will change the values of each crystal.</p>
-	</div>	
-	
-
-
-	<div class="box-2">Let's play the Crystal Game!</div>
-	
-	<div class="targetScoreBox">
-		<h2 id="targetScore" class="box-label"></h2>
-	</div>	
-
-	<div class="wins-losses">
-    	<h2 id="wins" class="panel-label"></h2>
-		<h2 id="losses" class="panel-label"></h2>
+ 	<div class="box-1" align="center">
+ 		<ol type="1">
+ 			<li>You will be given a random number at the start of the game (the "Target Score".  There are four crystals below.</li>
+			<li>By clicking on a crystal, you will add a specific amount of points to your "Total Score".
+			</li>
+			<li>You win the game by matching your "Total Score" to "Target Score", you lose the game if your "Total Score" goes above the random number ("Target Score").</li>
+			<li>The value of each crystal is hidden from you until you click on it.</li>
+			<li>Each time when the game starts or restarts, the game will change the values of each crystal.</li>
+		</ol>
 	</div>
-				    
-	<div class="image-blocks">	
-		<img class="goldminer" src="assets/images/goldminer.jpg">
+	
+
+
+	<!-- <div class="box-2">Let's play the Crystal Game!</div> -->
+	<div class="clearfix" align="center">
+		<div class="targetScoreBox">
+			<h2>Target Score</h2>
+			<hr>
+			<h2 id="targetScore" class="box-label"></h2>
+		</div>	
+		
+		<div class="guessesBox">
+			<h2 class="totScoreTitle">Total Score</h2>
+			<hr>
+			<h2 id="guessesThusFar"></h2>	
+		</div>
+	</div>
+
+	<div class="image-blocks" align="center">	
 		<img class="images" id="pinkCrystal" src="assets/images/pinkteardrop.png">
-		<img class="images" id="blueCrystal" src="assets/images/aquamarine_Gemstone.png">
+		<img class="images" id="blueCrystal" src="assets/images/Aquamarine_Gemstone.png">
 		<img class="images" id="greenCrystal" src="assets/images/Alexandrite.png">
 		<img class="images" id="purpleCrystal" src="assets/images/purplecrystal.jpg">
+		
 	</div>
-
-	<div>
-		<h2 class="totScoreTitle">Your Total Score Is</h2>
-	</div>	
 	
-	<div class="guessesBox">
-		<h2 id="guessesThusFar"></h2>	
+	<div class="wins-losses" align="center">
+		
+
+		<h2 id="wins" class="panel-label"></h2>
+		<h2 id="losses" class="panel-label"></h2>
+		<h2 id="message" class="panel-label"></h2>
+		
+		<div class="goldminer">
+			<img hidden class="goldminer" src="assets/images/goldminer.jpg">
+		</div>
 	</div>
 
  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -10,12 +10,14 @@ var greenCrystal = 0;
 var wins = 0;
 var losses = 0;
 var totScore = 0;
+var message = "";
 
 // calculate random total
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+  return Math.floor(Math.random() * (max - min)) + min; 
+  //The maximum is exclusive and the minimum is inclusive
 }
 
 function resetGame() {
@@ -26,7 +28,8 @@ function resetGame() {
     blueCrystal = getRandomInt(1, 12);
     greenCrystal = getRandomInt(1, 12);
     totScore=0;
-    console.log(pinkCrystal, blueCrystal, greenCrystal, purpleCrystal);  
+    console.log(pinkCrystal, blueCrystal, greenCrystal, purpleCrystal); 
+
 }
 
 function updateHTMLDisplay() {
@@ -34,7 +37,8 @@ function updateHTMLDisplay() {
     $("#wins").html("Wins: " + wins);
     $("#losses").html("Losses: " + losses);
     $("#guessesThusFar").html(totScore);
-
+    $("#message").html(message);
+    // $(".goldminer").hide();
 }
 
 function onButtonClick(buttonNumbers) {
@@ -43,11 +47,13 @@ function onButtonClick(buttonNumbers) {
 
     if (totScore === targetScore) {
         wins++;
+        message = "You win!";
+        $(".goldminer").show();
         resetGame();
     } else if (totScore > targetScore) {
         losses++;
-        resetGame();
-    
+        message = "You lost!";
+        resetGame(); 
     }
 
     updateHTMLDisplay();
@@ -75,53 +81,14 @@ $("#greenCrystal").click(function() {
 });
 
 
-// $( "#target" ).click(function() {
-//   alert( "Handler for .click() called." );
-// });
-
 $(document).ready(function() {
-    
+
     console.log("I'm Ready!");
     resetGame();
     updateHTMLDisplay();
+    alert("Let's Play the Crystal Game");
     
 });
-
-
-//   // red image clicked
-        // add points for image to total and check
-//   // blue image clicked
-        // add points for image to total and check
-//   // yellow image clicked
-        // add points for image to total and check
-//   // purple image clicked
-        // add points for image to total and check
-//   // update score
-        // update displayed html
-
-// function startOfGame() {
-//   calculateRandomTotal()
-//   calculateRandomButtonValue()
-//   otherStuff()	
-// }
-// function onRedImageClicked() {
-//   addPointsAndCheck(redImagePoints);	
-// }
-
-// write html to call these functions
-
-// END OF GARY NOTES -->
-
-    
-
-
-
-// BONUS TO DO make the goldminer hide and reappear.
-    // $(function() {
-
-    //     $("#goldminer").hide(5000).show(1000);     
-    // });
-
 
 
 
